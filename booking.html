@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aranya - Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body bgcolor="#F3EFEA">
+<header>
+    <h1 align="center"><font face="Playfair Display, Georgia, serif" color="#1C1917" size="7">aranya</font></h1>
+    <p align="center"><font face="Manrope, Arial, sans-serif" color="#3F6B4A" size="2">LUXURY FOREST RETREATS WORLDWIDE</font></p>
+</header>
+<nav align="center">
+    <font face="Manrope, Arial, sans-serif" size="3">
+    <a href="index.html"><font color="#1C1917">Home</font></a> |
+    <a href="retreats.html"><font color="#1C1917">Retreats</font></a> |
+    <a href="booking.html"><font color="#1C1917">Booking</font></a> |
+    <a href="gallery.html"><font color="#1C1917">Gallery</font></a>
+    </font>
+</nav>
+<hr>
+<main>
+    <section>
+        <table width="100%" bgcolor="#12301F" cellpadding="35">
+            <tr>
+                <td align="center">
+                    <font face="Manrope, Arial, sans-serif" color="#A9C9B0" size="2">BOOKING</font>
+                    <h2><font face="Playfair Display, Georgia, serif" color="#F3EFEA" size="7">Reserve your retreat.</font></h2>
+                    <p><font face="Manrope, Arial, sans-serif" color="#D9E6DB" size="3">Share your details and our concierge will reach out within 24 hours.</font></p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <form action="#" method="get">
+            <fieldset>
+                <legend><font face="Playfair Display, Georgia, serif" color="#12301F" size="4">Traveller Details</font></legend>
+                <font face="Manrope, Arial, sans-serif" color="#1C1917" size="3">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+                </font>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><font face="Playfair Display, Georgia, serif" color="#12301F" size="4">Stay Details</font></legend>
+                <font face="Manrope, Arial, sans-serif" color="#1C1917" size="3">
+                <label for="retreat">Select Retreat:</label><br>
+                <select id="retreat" name="retreat">
+                    <option value="amazon">Amazon Canopy Lodge, Brazil</option>
+                    <option value="daintree">Daintree Treehouse, Australia</option>
+                    <option value="coorg">Coorg Firefly Estate, India</option>
+                    <option value="blackforest">Black Forest Cabin, Germany</option>
+                    <option value="lapland">Lapland Lake Lodge, Finland</option>
+                    <option value="monteverde">Monteverde Cloud Lodge, Costa Rica</option>
+                </select><br><br>
+                <label for="arrival">Arrival Date:</label><br>
+                <input type="date" id="arrival" name="arrival"><br><br>
+                <label for="guests">Number of Guests:</label><br>
+                <input type="number" id="guests" name="guests" min="1" max="10" value="2"><br><br>
+                <p>Stay Type:</p>
+                <input type="radio" id="solo" name="staytype" value="solo">
+                <label for="solo">Solo</label>
+                <input type="radio" id="couple" name="staytype" value="couple">
+                <label for="couple">Couple</label>
+                <input type="radio" id="family" name="staytype" value="family">
+                <label for="family">Family</label>
+                <input type="radio" id="friends" name="staytype" value="friends">
+                <label for="friends">Friends</label>
+                </font>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><font face="Playfair Display, Georgia, serif" color="#12301F" size="4">Experiences</font></legend>
+                <font face="Manrope, Arial, sans-serif" color="#1C1917" size="3">
+                <input type="checkbox" id="trekking" name="experience" value="trekking">
+                <label for="trekking">Forest Trekking</label><br>
+                <input type="checkbox" id="fishing" name="experience" value="fishing">
+                <label for="fishing">Lakeside Fishing</label><br>
+                <input type="checkbox" id="stargazing" name="experience" value="stargazing">
+                <label for="stargazing">Stargazing Night</label><br>
+                <input type="checkbox" id="firefly" name="experience" value="firefly">
+                <label for="firefly">Firefly Trail</label><br>
+                <input type="checkbox" id="spa" name="experience" value="spa">
+                <label for="spa">Spa and Wellness</label><br><br>
+                <label for="requests">Special Requests:</label><br>
+                <textarea id="requests" name="requests" rows="4" cols="35" placeholder="Tell us anything we should know"></textarea><br><br>
+                <button type="submit">Confirm Reservation</button>
+                <button type="reset">Reset</button>
+                </font>
+            </fieldset>
+        </form>
+    </section>
+</main>
+<footer>
+    <hr>
+    <p align="center"><font face="Manrope, Arial, sans-serif" color="#5C5650" size="2">&copy; 2026 Aranya Retreats | hello@aranya.com | +91 98765 43210</font></p>
+</footer>
+</body>
+</html>
